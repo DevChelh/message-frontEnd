@@ -27,12 +27,13 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "/node_modules/primeflex/primeflex.css"
+              "src/assets"
+              
               
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeflex/primeflex.min.css"
             ],
             "scripts": []
           },
