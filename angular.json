@@ -28,7 +28,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "node_modules/primeflex/primeflex.min.css"
+              "/node_modules/primeflex/primeflex.css"
+              
             ],
             "styles": [
               "src/styles.scss"
@@ -101,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
