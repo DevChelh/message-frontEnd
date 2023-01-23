@@ -1,0 +1,30 @@
+<div class="grid">
+    <div class="col-4" 
+    *ngFor="let user of utilisateur">
+        <p-card>
+            <ng-template pTemplate="header" class="flex justify-content-between">
+                <div class="flex justify-content-between mx-4">
+                    <p><strong>{{user.nom | uppercase }} {{user.prenom | uppercase }}</strong></p>
+                    <p class="text-green-700"><strong>{{user.etat}}</strong></p>
+                </div>
+            </ng-template>
+            <img class="img" src= {{user.photo}} >
+            <ng-template pTemplate="footer">
+                <div class="flex justify-content-between">
+                    <button pButton
+                    class="p-button-success"
+                    type="button"
+                    icon="pi pi-comments"
+                    iconPos="left"
+                    label="Discutter"></button>
+                    <button pButton
+                    class="p-button-secondary"
+                    type="button"
+                    icon="pi pi-send"
+                    iconPos="left"
+                    label="Laissez un message"></button>
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+</div>
