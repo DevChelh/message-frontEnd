@@ -1,12 +1,9 @@
-FROM node:alpine as builder
-WORKDIR '/builddir'
-COPY package.json .
-RUN npm install
+FROM node:latest as node
+WORKDIR /app
 COPY . .
-RUN npm run build
+RUN npm install
+RUN npm run build --prod
+
+# stage 2
 FROM nginx:alpine
-COPY --from=builder /builddir/build /usr/share/nginx/html
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx/nginx.conf /etc/nginx/conf.d
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+COPY --from=node /app/dist/essagerie /usr/share/nginx/html
