@@ -8,13 +8,15 @@ import { PersonnePresentesComponent } from './personne-presentes/personne-presen
 import { InscriptionComponent } from './inscription/inscription.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { DetailProfilComponent } from './detail-profil/detail-profil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonnePresentesComponent,
     InscriptionComponent,
-    NavbarComponent
+    NavbarComponent,
+    DetailProfilComponent
   ],
   imports: [
     BrowserModule,
