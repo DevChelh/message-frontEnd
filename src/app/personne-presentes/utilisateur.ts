@@ -9,7 +9,13 @@ export const Utilisateur: CardProfil[] = [
 },
 {
     nom: "bessaa",
-    prenom: "amir",
+    prenom: "oussama",
+    etat: "connecté",
+    photo: '/assets/genie.jpg'
+},
+{
+    nom: "bessaa",
+    prenom: "lamine",
     etat: "connecté",
     photo: '/assets/genie.jpg'
 },
@@ -21,37 +27,31 @@ export const Utilisateur: CardProfil[] = [
 },
 {
     nom: "bessaa",
-    prenom: "amir",
+    prenom: "onessai",
     etat: "connecté",
     photo: '/assets/genie.jpg'
 },
 {
     nom: "bessaa",
-    prenom: "amir",
+    prenom: "etonarrive",
     etat: "connecté",
     photo: '/assets/genie.jpg'
 },
 {
     nom: "bessaa",
-    prenom: "amir",
+    prenom: "attendez",
     etat: "connecté",
     photo: '/assets/genie.jpg'
 },
 {
     nom: "bessaa",
-    prenom: "amir",
+    prenom: "paslongtemp",
     etat: "connecté",
     photo: '/assets/genie.jpg'
 },
 {
     nom: "bessaa",
-    prenom: "amir",
-    etat: "connecté",
-    photo: '/assets/genie.jpg'
-},
-{
-    nom: "bessaa",
-    prenom: "amir",
+    prenom: "youhou",
     etat: "connecté",
     photo: '/assets/genie.jpg'
 },
