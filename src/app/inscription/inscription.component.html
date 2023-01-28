@@ -1,29 +1,61 @@
 <div class="container">
   <div class="row cc valign-wrapper">
-    <form class="col l6 s12 offset-l3">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate" />
-          <label for="first_name">First Name</label>
+    <form class="col l6 s12 offset-l3" (ngSubmit)="saveData()">
+      <fieldset>
+        <legend>Formulaire d'inscription</legend>
+        <div class="row">
+          <div class="input-field col s6">
+            <input
+              id="first_name"
+              type="text"
+              class="validate"
+              [(ngModel)]="user.firstName"
+              name="nom"
+            />
+            <label for="first_name"> Nom </label>
+          </div>
+          <div class="input-field col s6">
+            <input
+              id="last_name"
+              type="text"
+              class="validate"
+              [(ngModel)]="user.lastName"
+              name="prenom"
+            />
+            <label for="last_name"> Prénom </label>
+          </div>
         </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate" />
-          <label for="last_name">Last Name</label>
+        <div class="row"></div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input
+              id="password"
+              type="password"
+              class="validate"
+              [(ngModel)]="user.password"
+              name="password"
+            />
+            <label for="password">Mot de passe</label>
+          </div>
         </div>
-      </div>
-      <div class="row"></div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate" />
-          <label for="password">Password</label>
+        <div class="row">
+          <div class="input-field col s12">
+            <input
+              id="email"
+              type="email"
+              class="validate"
+              [(ngModel)]="user.email"
+              name="email"
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="col">
+            <button class="btn blue lighten-1" type="submit" name="action">
+              S'enregistrer
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate" />
-          <label for="email">Email</label>
-        </div>
-      </div>
+      </fieldset>
     </form>
   </div>
 </div>
