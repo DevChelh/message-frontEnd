@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +10,11 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { DetailProfilComponent } from './detail-profil/detail-profil.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './users/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +22,17 @@ import { DetailProfilComponent } from './detail-profil/detail-profil.component';
     PersonnePresentesComponent,
     InscriptionComponent,
     NavbarComponent,
-    DetailProfilComponent
+    DetailProfilComponent,
+    UsersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule, 
+    HttpClientModule, 
+    CommonModule,
+    PdfViewerModule
    
   ],
   providers: [],

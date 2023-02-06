@@ -1,0 +1,14 @@
+{
+  "login": [
+    {
+      "username": "user1",
+      "password": "pass1",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNTg3NTE2NTUxfQ.8-HWpP0oM_dOjrV7JlKjG1_lTmZzUvL-jhQ6UcV7Ypo"
+    },
+    {
+      "username": "user2",
+      "password": "pass2",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNTg3NTE2NTYyfQ.NM6VZU6K0o7vZU6xL-dV0o-rISi7T9hM1i4lZ4b4p4g"
+    }
+  ]
+}
